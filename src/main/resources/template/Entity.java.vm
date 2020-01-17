@@ -28,7 +28,7 @@ public class ${className}Entity implements Serializable {
 	 * $column.comments
 	 */
 	#if($column.columnName == $pk.columnName)
-@TableId(type = IdType.ASSIGN_UUID)
+@TableId(type = IdType.ASSIGN_ID)
 	#end
 private $column.attrType $column.attrname;
 #end
